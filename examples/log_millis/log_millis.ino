@@ -49,10 +49,6 @@ void loop() {
   message.set("millis", millis());
   publisher.publish(&message);
 
-  // This is just an example, I'm sure there's a better way to do this
-  message = Message(String(String("Current millis is ") + String(millis())).c_str());
-  publisher.publish(&message);
-
   Serial.println("Data sent :)");
   delay(100);
 }
