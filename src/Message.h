@@ -7,27 +7,23 @@
 // TODO: different amounts of memory depending on the platform!
 
 #ifdef ESP8266
-#include <ESP8266WiFi.h>
+    #include <ESP8266WiFi.h>
+    #define _GELF_HOST (WiFi.hostname())
+#else
+    #define _GELF_HOST ("graylog-default-host")
 #endif
-
-#define GRAYLOG_DEFAULT_HOST "graylog-default-host"
 
 class Message
 {
 public:
     explicit Message(const char *short_message) {
-
         _json["version"] = "1.1";
-#ifdef ESP8266
-        _json["host"] = WiFi.hostname();
-#else
-        _json["host"] = GRAYLOG_DEFAULT_HOST;
-#endif
+        _json["host"] = _GELF_HOST;
         _json["short_message"] = short_message;
     }
 
     template<typename T>
-    void set(const char *field, T value) {
+    void set(const char *field, const T value) {
         if (strncmp("id", field, 2) == 0 || strncmp("_id", field, 3) == 0) {
             return;
         }

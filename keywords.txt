@@ -21,5 +21,4 @@ encode KEYWORD2
 # Constants (LITERAL1)
 #######################################
 
-GRAYLOG_DEFAULT_HOST LITERAL1
 GRAYLOG_UDP_DEFAULT_PORT LITERAL1
