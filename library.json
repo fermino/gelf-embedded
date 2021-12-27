@@ -1,5 +1,5 @@
 {
-  "name": "gelf-embedded",
+  "name": "gelf",
   "version": "1.0.0",
   "description": "An easy to use GELF (graylog) library for Arduino, ESP8266 and other embedded platforms",
   "keywords": "esp8266, arduino, gelf, graylog, log, debug",
