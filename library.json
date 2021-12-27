@@ -1,0 +1,26 @@
+{
+  "name": "gelf-embedded",
+  "version": "1.0.0",
+  "description": "An easy to use GELF (graylog) library for Arduino, ESP8266 and other embedded platforms",
+  "keywords": "esp8266, arduino, gelf, graylog, log, debug",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/fermino/gelf-embedded.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Fermín Olaiz",
+      "email": "ferminolaiz@gmail.com",
+      "url": "https://github.com/fermino"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fermino/gelf-embedded/",
+  "dependencies": {
+    "bblanchon/ArduinoJson":"^6.18.5"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
