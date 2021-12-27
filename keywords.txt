@@ -1,0 +1,25 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Transport KEYWORD1
+UDPTransport KEYWORD1
+Publisher KEYWORD1
+Message KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+publish KEYWORD2
+send KEYWORD2
+set KEYWORD2
+getEncodedLength KEYWORD2
+encode KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+GRAYLOG_DEFAULT_HOST LITERAL1
+GRAYLOG_UDP_DEFAULT_PORT LITERAL1

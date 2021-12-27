@@ -1,4 +1,4 @@
-#include "../include/Publisher.h"
+#include "Publisher.h"
 
 Publisher::Publisher(Transport *transport) {
     _transport = transport;

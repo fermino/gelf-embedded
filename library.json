@@ -17,7 +17,7 @@
     }
   ],
   "license": "MIT",
-  "homepage": "https://github.com/fermino/gelf-embedded/",
+  "homepage": "https://github.com/fermino/gelf-embedded",
   "dependencies": {
     "bblanchon/ArduinoJson":"^6.18.5"
   },

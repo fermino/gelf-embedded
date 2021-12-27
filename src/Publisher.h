@@ -1,7 +1,7 @@
 #ifndef GELF_PUBLISHER_H
 #define GELF_PUBLISHER_H
 
-#include "Transport/Transport.h"
+#include "Transport.h"
 #include "Message.h"
 
 class Publisher

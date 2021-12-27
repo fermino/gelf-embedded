@@ -1,4 +1,4 @@
-#include "../../include/Transport/UDPTransport.h"
+#include "UDPTransport.h"
 
 UDPTransport::UDPTransport(char *host, int port)
 {

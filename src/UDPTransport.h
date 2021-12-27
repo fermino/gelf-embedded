@@ -1,8 +1,8 @@
 #ifndef GELF_UDPTRANSPORT_H
 #define GELF_UDPTRANSPORT_H
 
-#include "Transport/Transport.h"
-#include "../Message.h"
+#include "Transport.h"
+#include "Message.h"
 
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
