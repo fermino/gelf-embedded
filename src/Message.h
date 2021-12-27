@@ -28,9 +28,11 @@ public:
             return;
         }
 
-        if (field[0] != '_') {
+        // As defined in the documentation, additional fields should be prefixed with an underscore
+        // In practice graylog takes any other field as an additional field so it's not strictly necessary
+        /*if (field[0] != '_') {
             // TODO: prepend underscore!
-        }
+        }*/
 
         // TODO: Check regex - ^[\w\.\-]*$
 
