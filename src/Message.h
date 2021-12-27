@@ -25,6 +25,7 @@ public:
 #endif
         _json["short_message"] = short_message;
     }
+
     template<typename T>
     void set(const char *field, T value) {
         if (strncmp("id", field, 2) == 0 || strncmp("_id", field, 3) == 0) {
