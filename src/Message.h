@@ -17,6 +17,10 @@ class Message
 {
 public:
     explicit Message(const char *short_message) {
+        reset(short_message);
+    }
+    void reset(const char *short_message) {
+        _json = StaticJsonDocument<512>();
         _json["version"] = "1.1";
         _json["host"] = _GELF_HOST;
         _json["short_message"] = short_message;
