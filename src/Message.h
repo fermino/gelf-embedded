@@ -9,6 +9,9 @@
 #ifdef ESP8266
     #include <ESP8266WiFi.h>
     #define _GELF_HOST (WiFi.hostname())
+#elif defined(ESP32)
+    #include <WiFi.h>
+    #define _GELF_HOST (WiFi.getHostname())
 #else
     #define _GELF_HOST ("graylog-default-host")
 #endif

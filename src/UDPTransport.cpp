@@ -18,10 +18,14 @@ void UDPTransport::send(Message *message)
 
     unsigned long length = message->getEncodedLength();
     char buffer[length + 1];
-    message->encode(buffer, length); // Debería ser length + 1??
+    message->encode(buffer, length); // it should length + 1??
     buffer[length] = '\0'; // This might be unnecessary
 
+#ifdef ESP32
+    _udp.write(reinterpret_cast<uint8_t*>(buffer),length);
+#else
     _udp.write(buffer);
+#endif
     _udp.endPacket();
 
     // https://stackoverflow.com/questions/1098897/what-is-the-largest-safe-udp-packet-size-on-the-internet
